@@ -46,48 +46,147 @@
           </label>
 
           <!-- Desktop Menu -->
-           <ul class="hidden items-center gap-8 md:flex">
+          <ul class="hidden items-center gap-8 md:flex">
             <li>
-              <a href="/" class="font-medium text-gray-700 hover:text-green-700 transition">Home</a>
+              <a
+                href="/"
+                class="font-medium text-gray-700 hover:text-green-700 transition"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="/about" class="font-medium text-gray-700 hover:text-green-700 transition">About</a>
+              <a
+                href="/about"
+                class="font-medium text-gray-700 hover:text-green-700 transition"
+                >About</a
+              >
             </li>
             <li>
-              <a href="/services" class="font-medium text-gray-700 hover:text-green-700 transition">Services</a>
+              <a
+                href="/services"
+                class="font-medium text-gray-700 hover:text-green-700 transition"
+                >Services</a
+              >
             </li>
             <li>
-              <a href="/contact" class="font-medium text-gray-700 hover:text-green-700 transition">Contact</a>
+              <a
+                href="/contact"
+                class="font-medium text-gray-700 hover:text-green-700 transition"
+                >Contact</a
+              >
             </li>
             <li>
-              <a href="/login" class="font-medium text-gray-700 hover:text-green-700 transition">Login</a>
+              <a
+                href="/login"
+                class="font-medium text-gray-700 hover:text-green-700 transition"
+                >Login</a
+              >
             </li>
-           </ul>
+          </ul>
 
-           <!-- Mobile Menu -->
-            <div class="absolute left-0 top-full hidden w-full bg-white border-t border-gray-200 shadow-lg peer-checked:block md:hidden">
-
-              <ul class="flex flex-col p-4">
-                <li>
-                  <a href="/" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">Home</a>
-                </li>
-                <li>
-                  <a href="/about" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">About</a>
-                </li>
-                <li>
-                  <a href="/services" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">Services</a>
-                </li>
-                <li>
-                  <a href="/contact" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">Contact</a>
-                </li>
-                <li class="mt-3">
-                  <a href="/login" class="block rounded-lg bg-green-700 px-4 py-3 text-center font-medium text-white hover:bg-green-800">Login</a>
-                </li>
-              </ul>
-            </div>
+          <!-- Mobile Menu -->
+          <div
+            class="absolute left-0 top-full hidden w-full bg-white border-t border-gray-200 shadow-lg peer-checked:block md:hidden"
+          >
+            <ul class="flex flex-col p-4">
+              <li>
+                <a
+                  href="/"
+                  class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700"
+                  >Contact</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="/login"
+                  class="block rounded-lg bg-green-700 px-4 py-3 text-center font-medium text-white hover:bg-green-800"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
+
+    <!-- Hero -->
+    <header class="relative overflow-hidden">
+      <!-- Background -->
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-br from-green-50 via-white to-green-100"
+      ></div>
+      <div
+        class="mx-auto flex max-w-7xl items-center gap-16 px-6 py-20 lg:flex-row flex-col-reverse"
+      >
+        <!-- Left content -->
+        <div class="flex-1">
+          <span
+            class="rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-700"
+            >Modern Furniture</span
+          >
+
+          <h1 class="mt-6 text-5xl font-bold leading-tight text-gray-900">
+            Beautiful Furniture For
+            <span class="text-green-700">Modern Living</span>
+          </h1>
+
+          <p class="mt-6 max-w-lg text-lg leading-8 text-gray-600">
+            Discover stylish sofas, tables, chairs and home décor crafted with
+            premium materials to make your home elegant and comfortable.
+          </p>
+
+          <div class="mt-8 flex gap-4">
+            <a
+              href="#"
+              class="rounded-lg bg-green-700 px-6 py-3 font-semibold text-white hover:bg-green-800"
+              >Shop Now</a
+            >
+
+            <a
+              href="#"
+              class="rounded-lg border border-green-700 px-6 py-3 font-semibold text-green-700 hover:bg-green-50"
+              >Explore</a
+            >
+          </div>
+        </div>
+
+        <!-- Right image -->
+        <div class="relative flex-1">
+          <img
+            src="assets/seater-sofa.png"
+            alt="Sofa"
+            class="w-[500px] xl:w-[580px] drop-shadow-2xl"
+          />
+
+          <img
+            src="assets/app.png"
+            alt="App"
+            class="absolute -bottom-8 right-0 w-48 rounded-2xl shadow-xl md:w-56"
+          />
+        </div>
+      </div>
+    </header>
 
     <script type="module" src="/src/main.js"></script>
   </body>
