@@ -7,35 +7,28 @@
     <link href="/src/style.css" rel="stylesheet" />
     <title>my-home</title>
   </head>
-  <body
-    class="max-w-[1440px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-white"
-  >
-    <nav class="bg-[#A1BC98] shadow-md">
-      <div class="mx-auto max-w-7xl px-4">
+  <body class="max-w-[1440px] mx-auto bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
+      <div class="mx-auto max-w-7xl px-6">
         <div class="relative flex h-16 items-center justify-between">
           <!-- Logo -->
-          <a
-            href="/"
-            aria-label="Go to homepage"
-            class="text-2xl font-bold text-neutral-900"
-          >
+          <a href="/" aria-label="Homepage">
             <img
-              src="assets/logo.png"
-              alt="home logo"
-              class="w-[52px] h-[52px]"
+              src="assets/home-agreement.png"
+              alt="logo"
+              class="h-12 w-12 object-contain"
             />
           </a>
 
-          <!-- Mobile Toggle -->
+          <!-- Mobile toggle -->
           <input type="checkbox" id="nav-toggle" class="peer hidden" />
 
-          <!-- Hamburger Button -->
+          <!-- Hamburger -->
           <label
             for="nav-toggle"
-            class="cursor-pointer rounded-md p-2 hover:bg-orange-500 md:hidden"
+            class="cursor-pointer rounded-md p-2 text-gray-700 hover:bg-green-100 md:hidden"
           >
-            <span class="sr-only">Open menu</span>
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -52,91 +45,46 @@
             </svg>
           </label>
 
-          <!-- Desktop Navigation -->
-          <ul class="hidden items-center gap-8 md:flex">
+          <!-- Desktop Menu -->
+           <ul class="hidden items-center gap-8 md:flex">
             <li>
-              <a href="/" class="font-medium hover:text-[#778873] transition">
-                Home
-              </a>
+              <a href="/" class="font-medium text-gray-700 hover:text-green-700 transition">Home</a>
             </li>
             <li>
-              <a
-                href="/about"
-                class="font-medium hover:text-[#778873] transition"
-              >
-                About
-              </a>
+              <a href="/about" class="font-medium text-gray-700 hover:text-green-700 transition">About</a>
             </li>
             <li>
-              <a
-                href="/services"
-                class="font-medium hover:text-[#778873] transition"
-              >
-                Services
-              </a>
+              <a href="/services" class="font-medium text-gray-700 hover:text-green-700 transition">Services</a>
             </li>
             <li>
-              <a
-                href="/contact"
-                class="font-medium hover:text-[#778873] transition"
-              >
-                Contact
-              </a>
+              <a href="/contact" class="font-medium text-gray-700 hover:text-green-700 transition">Contact</a>
             </li>
             <li>
-              <a
-                href="/login"
-                class="rounded-lg bg-[#A1BC98] px-4 py-2 font-medium text-[#778873] hover:bg-neutral-100"
-              >
-                Login
-              </a>
+              <a href="/login" class="font-medium text-gray-700 hover:text-green-700 transition">Login</a>
             </li>
-          </ul>
+           </ul>
 
-          <!-- Mobile Navigation -->
-          <div
-            class="absolute left-0 top-full hidden w-full bg-orange-400 shadow-lg peer-checked:block md:hidden"
-          >
-            <ul class="flex flex-col p-4">
-              <li>
-                <a href="/" class="block rounded px-4 py-3 hover:bg-orange-500">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  class="block rounded px-4 py-3 hover:bg-orange-500"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/services"
-                  class="block rounded px-4 py-3 hover:bg-orange-500"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  class="block rounded px-4 py-3 hover:bg-orange-500"
-                >
-                  Contact
-                </a>
-              </li>
-              <li class="mt-2">
-                <a
-                  href="/login"
-                  class="block rounded bg-white px-4 py-3 text-center font-medium text-orange-500"
-                >
-                  Login
-                </a>
-              </li>
-            </ul>
-          </div>
+           <!-- Mobile Menu -->
+            <div class="absolute left-0 top-full hidden w-full bg-white border-t border-gray-200 shadow-lg peer-checked:block md:hidden">
+
+              <ul class="flex flex-col p-4">
+                <li>
+                  <a href="/" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">Home</a>
+                </li>
+                <li>
+                  <a href="/about" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">About</a>
+                </li>
+                <li>
+                  <a href="/services" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">Services</a>
+                </li>
+                <li>
+                  <a href="/contact" class="block rounded-lg px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700">Contact</a>
+                </li>
+                <li class="mt-3">
+                  <a href="/login" class="block rounded-lg bg-green-700 px-4 py-3 text-center font-medium text-white hover:bg-green-800">Login</a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
     </nav>
