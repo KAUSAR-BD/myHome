@@ -13,12 +13,13 @@
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative flex h-16 items-center justify-between">
           <!-- Logo -->
-          <a href="/" aria-label="Homepage">
+          <a href="/" aria-label="Homepage" class="flex items-center gap-3">
             <img
               src="assets/home-agreement.png"
               alt="logo"
               class="h-12 w-12 object-contain"
             />
+            <h3 class="text-2xl font-bold">My Home</h3>
           </a>
 
           <!-- Mobile toggle -->
@@ -355,12 +356,20 @@
               Get up to 30% off on premium furniture collections
             </p>
 
-            <a href="#" class="mt-6 inline-block bg-white text-green-700 px-6 py-3 rounded-lg font-semibold">Shop Deals</a>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-white text-green-700 px-6 py-3 rounded-lg font-semibold"
+              >Shop Deals</a
+            >
           </div>
 
           <!-- Decorative shapes -->
-           <div class="absolute -top-10 -right-10 w-40 h-40 bg-green-500 rounded-full opacity-40"></div>
-           <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-green-600 rounded-full opacity-30"></div>
+          <div
+            class="absolute -top-10 -right-10 w-40 h-40 bg-green-500 rounded-full opacity-40"
+          ></div>
+          <div
+            class="absolute -bottom-10 -left-10 w-48 h-48 bg-green-600 rounded-full opacity-30"
+          ></div>
         </div>
       </div>
     </section>
@@ -369,13 +378,75 @@
     <footer class="bg-gray-900 text-gray-300">
       <div class="mx-auto max-w-7xl px-6 py-16">
         <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+          <!-- brand -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3">
+              <img
+                src="assets/home-agreement.png"
+                alt="My Home Logo"
+                class="h-12 w-12"
+              />
+              <h3 class="text-2xl font-bold text-white">My Home</h3>
+            </div>
+            <p class="mt-5 max-w-md leading-7 text-gray-400">
+              Creating beautiful living spaces with premium furniture, modern
+              craftsmanship, and timeless design for every home.
+            </p>
+            <div class="mt-6 flex gap-4">
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-green-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22 12A10 10 0 1010.5 21.95v-7.03H8v-2.92h2.5V9.8c0-2.48 1.48-3.85 3.75-3.85 1.09 0 2.23.19 2.23.19v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.92h-2.33v7.03A10 10 0 0022 12z"
+                  />
+                </svg>
+              </a>
 
-          <!--  -->
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-green-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.36 8.53 8.53 0 01-2.71 1.03A4.26 4.26 0 0016.1 4c-2.36 0-4.27 1.91-4.27 4.27 0 .33.04.66.11.97A12.08 12.08 0 013 5.14a4.27 4.27 0 001.32 5.69A4.23 4.23 0 012.8 10.3v.05c0 2.07 1.47 3.8 3.42 4.19a4.27 4.27 0 01-1.92.07c.54 1.68 2.11 2.91 3.98 2.94A8.56 8.56 0 012 19.54 12.08 12.08 0 008.56 21c7.87 0 12.18-6.52 12.18-12.18v-.56c.84-.6 1.57-1.35 2.15-2.2z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="#"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-green-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          
         </div>
       </div>
     </footer>
-
-
 
     <script type="module" src="/src/main.js"></script>
   </body>
